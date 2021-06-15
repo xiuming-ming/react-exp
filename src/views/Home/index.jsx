@@ -1,21 +1,18 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
-import PropPage from '../../views/PropPage'
 
 export default class Menu extends Component {
     
     state = {
         list: [
-            {name: 'Prop 使用', path: '/propPage'},
-            {name: '传参使用', path: ''},
-            {name: 'Redux使用', path: ''}
+            {name: 'Prop校验使用', path: '/propPage'},
+            {name: '传参使用总结', path: '/state'},
+            {name: 'Redux使用', path: '/reduxPage'}
         ]
     }
     gotoPath =(list) => {
-        this.props.history.push('/propPage')
+        this.props.history.push(list.path)
     }
     render() {
-        console.log(this.props, '88')
         return (
             <div>
                 <ul>
@@ -25,9 +22,6 @@ export default class Menu extends Component {
                     })
                 }
                 </ul>
-                <Switch>
-                    <Route path="/propPage" component={PropPage} />
-                </Switch>
             </div>
         );
     }

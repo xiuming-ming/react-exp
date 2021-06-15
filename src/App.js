@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Home from './views/Home'
+import RouteMap from './router'
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <RouteMap />
       </div>
     )
   }
