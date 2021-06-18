@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import Count from '../Count'
+import Person from '../../components/Person'
 
-class Proppage extends Component {
+class index extends Component {
     render() {
         return (
             <div>
-                我是传参使用总结
+                <Count/>
+                <div style={{marginTop: 30+ 'px'}}>
+                <Person/>
+                </div>
             </div>
         );
     }
 }
 
-export default Proppage;
+export default index;

@@ -1,5 +1,5 @@
 
-import { INCREMENT, DECREMENT} from './constant'
+import { INCREMENT, DECREMENT} from '../constant'
 // 该违建专门为count组件生成action对象
 export const creatIncrementAction = (data) => {
     return {type: INCREMENT, data}
