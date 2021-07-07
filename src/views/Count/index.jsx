@@ -25,5 +25,4 @@ function mapDispatchToProps (dispatch) {
         addAsync:(data, time) => {dispatch(creatIncrementAsyncAction(data, time))}
     }
 }
-
 export default connect(mapStateToProps, mapDispatchToProps)(Count)
